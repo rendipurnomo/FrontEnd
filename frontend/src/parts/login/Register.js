@@ -5,8 +5,8 @@ import axios from 'axios';
 
 export default function Register() {
   const [email, setEmail]= useState("");
-  const [password, setPassword]= useState("");
   const [name, setName]= useState("");
+  const [password, setPassword]= useState("");
   const [confPassword, setConfPassword]= useState("");
   const [msg, setMsg]= useState('');
   const navigate = useNavigate();
@@ -15,12 +15,12 @@ export default function Register() {
     e.preventDefault();
     try {
       await axios.post('http://localhost:5000/users', {
-        name:name,
         email:email,
+        name:name,
         password:password,
         confPassword:confPassword
       });
-      navigate("/");
+      navigate("/login");
     } catch (error) {
       if(error.response){
         setMsg(error.response.data.msg)
@@ -134,6 +134,7 @@ export default function Register() {
           </div>
           <div className="text-center lg:text-left">
             <button
+              type='submit'
               className="inline-block px-7 py-3 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
               Register
             </button>

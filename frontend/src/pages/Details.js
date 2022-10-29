@@ -6,7 +6,7 @@ import React from 'react'
 // import NewArrival from '../parts/homePages/NewArrival'
 // import ShippingDelivery from '../parts/ShippingDelivery'
 import Footer from '../parts/Footer'
-import Breadcrumb from '../component/Breadcrumb';
+// import Breadcrumb from '../component/Breadcrumb';
 import Productdetails from '../details/Productdetails';
 import Suggestion from '../details/Suggestion';
 
@@ -18,12 +18,7 @@ import Suggestion from '../details/Suggestion';
 export default function Details(list) {
   return (
     <div>
-        <Breadcrumb 
-        list={[
-          { url: "/", name: "Home"},
-          { url: "/categories/8098", name: "Jacket"},
-          { url: "/categories/90809/product/7889", name: "Details"}
-        ]}/>
+        {/* <Breadcrumb /> */}
         <Productdetails/>
         <Suggestion/>
         <Footer/>

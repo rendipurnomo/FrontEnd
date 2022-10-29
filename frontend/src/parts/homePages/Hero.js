@@ -1,11 +1,12 @@
 import React from 'react'
+import Person from "../../asset/images/person.png"
 
 export default function Hero() {
   return (
     <>
     {/* Decorative image */}
     <div className=''>
-    <img src="./images/person.png" alt="personImage" className="absolute lg:bottom-16 right-72 z-10 hover:animate-bounce"
+    <img src={Person} alt="person" className="absolute lg:bottom-16 right-72 z-40"
     style={{ height:720}}/>
     </div>
     

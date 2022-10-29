@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { useDispatch, useSelector} from 'react-redux'
-import { useNavigate } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 import {LoginUser, reset} from "../../features/authSlice"
-import { Link } from 'react-router-dom'
 
 export default function Login() {
   const [email, setEmail]= useState("");
@@ -11,7 +10,12 @@ export default function Login() {
   const navigate = useNavigate();
   const {user,  isSuccess, isLoading, message}= useSelector((state)=> state.auth);
 
-
+  useEffect(()=>{
+    if(user || isSuccess) {
+      navigate('/user');
+    }
+    dispatch(reset());
+  },[user, isSuccess, dispatch, navigate]);
 
   const Auth = (e)=>{
     e.preventDefault();
@@ -19,12 +23,7 @@ export default function Login() {
 
     // console.log({email:email, password:password})
   }
-  useEffect(()=>{
-      if(user || isSuccess) {
-        navigate('/');
-      }
-      dispatch(reset());
-    },[user, isSuccess, dispatch, navigate]);
+  
   return (
     <section className="h-screen">
   <div className="px-6 h-full text-gray-800">

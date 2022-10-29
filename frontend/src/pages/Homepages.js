@@ -7,7 +7,7 @@ import Testimoni from '../parts/homePages/Testimoni'
 import ShippingDelivery from '../parts/ShippingDelivery'
 import Footer from '../parts/Footer'
 
-import UseSrollAnchor from '../helpers/hooks/UseSrollAnchor'
+import UseSrollAnchor from '../hooks/UseSrollAnchor'
 
 
 
