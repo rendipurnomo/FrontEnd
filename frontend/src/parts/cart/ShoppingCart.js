@@ -56,7 +56,7 @@ export default function ShoppingCart() {
                 <div className="" style={{width: 90, height: 90}}>
                   <img
                     src="./images/content/chair-1.png"
-                    alt="chair-1"
+                    alt="x"
                     className="object-cover rounded-xl w-full h-full"
                   />
                 </div>
@@ -66,11 +66,11 @@ export default function ShoppingCart() {
                   <h6 className="font-semibold text-lg md:text-xl leading-8">
                     Saman Kakka
                   </h6>
-                  <span className="text-sm md:text-lg">Office Room</span>
+                  <span className="text-sm md:text-lg">jacket</span>
                   <h6
                     className="font-semibold text-base md:text-lg block md:hidden"
                   >
-                    IDR 28.000.000
+                    IDR 280000
                   </h6>
                 </div>
               </div>
@@ -78,7 +78,7 @@ export default function ShoppingCart() {
                 className="px-4 w-auto flex-none md:flex-1 md:w-5/12 hidden md:block"
               >
                 <div className="">
-                  <h6 className="font-semibold text-lg">IDR 28.000.000</h6>
+                  <h6 className="font-semibold text-lg">IDR 280000</h6>
                 </div>
               </div>
               <div className="px-4 w-2/12">
@@ -99,8 +99,8 @@ export default function ShoppingCart() {
               <div className="px-4 flex-none">
                 <div className="" style={{width: 90, height: 90}}>
                   <img
-                    src="./images/content/chair-2.png"
-                    alt="chair-2"
+                    src="#"
+                    alt="x"
                     className="object-cover rounded-xl w-full h-full"
                   />
                 </div>
@@ -108,13 +108,13 @@ export default function ShoppingCart() {
               <div className="px-4 w-auto flex-1 md:w-5/12">
                 <div className="">
                   <h6 className="font-semibold text-lg md:text-xl leading-8">
-                    Green Seat
+                    T-shirt
                   </h6>
-                  <span className="text-sm md:text-lg">Office Room</span>
+                  <span className="text-sm md:text-lg">Clothes</span>
                   <h6
                     className="font-semibold text-base md:text-lg block md:hidden"
                   >
-                    IDR 28.000.000
+                    IDR 280000
                   </h6>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export default function ShoppingCart() {
                 className="px-4 w-auto flex-none md:flex-1 md:w-5/12 hidden md:block"
               >
                 <div className="">
-                  <h6 className="font-semibold text-lg">IDR 12.500.000</h6>
+                  <h6 className="font-semibold text-lg">IDR 100000</h6>
                 </div>
               </div>
               <div className="px-4 w-2/12">
@@ -144,7 +144,7 @@ export default function ShoppingCart() {
                 <div className="" style={{width: 90, height: 90}}>
                   <img
                     src="./images/content/chair-3.png"
-                    alt="chair-3"
+                    alt="x"
                     className="object-cover rounded-xl w-full h-full"
                   />
                 </div>
@@ -154,11 +154,11 @@ export default function ShoppingCart() {
                   <h6 className="font-semibold text-lg md:text-xl leading-8">
                     Pacific
                   </h6>
-                  <span className="text-sm md:text-lg">Office Room</span>
+                  <span className="text-sm md:text-lg">Pants</span>
                   <h6
                     className="font-semibold text-base md:text-lg block md:hidden"
                   >
-                    IDR 28.000.000
+                    IDR 2800000
                   </h6>
                 </div>
               </div>
@@ -166,7 +166,7 @@ export default function ShoppingCart() {
                 className="px-4 w-auto flex-none md:flex-1 md:w-5/12 hidden md:block"
               >
                 <div className="">
-                  <h6 className="font-semibold text-lg">IDR 88.800.000</h6>
+                  <h6 className="font-semibold text-lg">IDR 800000</h6>
                 </div>
               </div>
               <div className="px-4 w-2/12">
@@ -225,8 +225,7 @@ export default function ShoppingCart() {
 
                 <div className="flex flex-col mb-4">
                   <label for="phone-number" className="text-sm mb-2"
-                    >Phone Number</label
-                  >
+                    >Phone Number</label>
                   <input
                     data-input
                     type="tel"
