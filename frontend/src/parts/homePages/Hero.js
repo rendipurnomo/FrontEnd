@@ -6,8 +6,8 @@ export default function Hero() {
     <>
     {/* Decorative image */}
     <div className=''>
-    <img src={Person} alt="person" className="absolute lg:bottom-16 right-72 z-40"
-    style={{ height:720}}/>
+    <img src={Person} alt="person" className="absolute lg:bottom-16 right-72 z-10 "
+    style={{ height:500}}/>
     </div>
     
     <div className="relative overflow-hidden bg-white min-h-screen">
