@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../parts/Navbar'
 import Hero from '../parts/homePages/Hero'
 import BrowesRoom from '../parts/homePages/BrowesRoom'
 import NewArrival from '../parts/homePages/NewArrival'
